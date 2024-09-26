@@ -1,0 +1,162 @@
+{
+    "label": "MemberTest",
+    "id": "membertest",
+    "version": "",
+    "author": "",
+    "author_link": "",
+    "description": "",
+    "objects": [],
+    "component": "",
+    "repository": "https://github.com/hideki-a/pcmsx-theme-repository-test",
+    "views": {
+        "f23cbc63-8ef2-416f-9c44-a4bccaeb30f9": {
+            "name": ".htaccess",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "htaccess",
+            "linked_file": "",
+            "urlmappings": [
+                {
+                    "name": ".htaccess",
+                    "model": "template",
+                    "mapping": ".htaccess",
+                    "container": "",
+                    "container_scope": "0",
+                    "skip_empty": "0",
+                    "trigger_scope": "1",
+                    "date_based": "",
+                    "fiscal_start": "1",
+                    "publish_file": "2",
+                    "furigana_json": "0",
+                    "furigana_setting": "0",
+                    "furigana_urlmap": null
+                }
+            ]
+        },
+        "a058de87-314d-4c7c-a471-628da952b5dc": {
+            "name": "Bootstrapper",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "bootstrapper",
+            "linked_file": "",
+            "urlmappings": [
+                {
+                    "name": "Bootstrapper",
+                    "model": "template",
+                    "mapping": "pt-view.php",
+                    "container": "",
+                    "container_scope": "0",
+                    "skip_empty": "0",
+                    "trigger_scope": "1",
+                    "date_based": "",
+                    "fiscal_start": "1",
+                    "publish_file": "2",
+                    "furigana_json": "0",
+                    "furigana_setting": "0",
+                    "furigana_urlmap": null
+                }
+            ]
+        },
+        "9ce5a085-a38b-4661-a9c1-29a755c73f54": {
+            "name": "メインページ",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "index",
+            "linked_file": "",
+            "urlmappings": [
+                {
+                    "name": "メインページ",
+                    "model": "template",
+                    "mapping": "index.html",
+                    "container": "",
+                    "container_scope": "0",
+                    "skip_empty": "0",
+                    "trigger_scope": "1",
+                    "date_based": "",
+                    "fiscal_start": "1",
+                    "publish_file": "1",
+                    "furigana_json": "0",
+                    "furigana_setting": "1",
+                    "furigana_urlmap": ""
+                }
+            ]
+        },
+        "8d6ab9c9-0b43-40bb-a4cb-1d8b4c21f6cf": {
+            "name": "ログイン・ログアウト",
+            "subject": "",
+            "status": "2",
+            "class": "Module",
+            "basename": "mod_login_logout",
+            "linked_file": ""
+        },
+        "2fa22740-d913-4a73-a2a1-76f240ebc6dc": {
+            "name": "ページ",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "page",
+            "linked_file": null,
+            "urlmappings": [
+                {
+                    "name": "ページ",
+                    "model": "page",
+                    "mapping": "<mt:pagefoldercontext><mt:folderpath>/</mt:pagefoldercontext><mt:pagebasename>.html",
+                    "container": "",
+                    "container_scope": "0",
+                    "skip_empty": "0",
+                    "trigger_scope": "1",
+                    "date_based": "",
+                    "fiscal_start": "1",
+                    "publish_file": "6",
+                    "furigana_json": "0",
+                    "furigana_setting": "0",
+                    "furigana_urlmap": null
+                }
+            ]
+        },
+        "c50fcf49-76a6-445a-8f55-60ad5a0e60bd": {
+            "name": "記事",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "entry",
+            "linked_file": "",
+            "urlmappings": [
+                {
+                    "name": "記事",
+                    "model": "entry",
+                    "mapping": "archives/<mt:entryid />.html",
+                    "container": "",
+                    "container_scope": "0",
+                    "skip_empty": "0",
+                    "trigger_scope": "1",
+                    "date_based": "",
+                    "fiscal_start": "1",
+                    "publish_file": "1",
+                    "furigana_json": "0",
+                    "furigana_setting": "0",
+                    "furigana_urlmap": null
+                }
+            ]
+        },
+        "73337c00-4797-4b8b-84f8-c676daf8fce6": {
+            "name": "404 Not Found",
+            "subject": "",
+            "status": "1",
+            "class": "Archive",
+            "basename": "404-error",
+            "linked_file": ""
+        },
+        "41b408e5-ca89-44e1-8159-102ffa052655": {
+            "name": "パスワードリセット",
+            "subject": "",
+            "status": "2",
+            "class": "Member",
+            "basename": "member_start_recover",
+            "linked_file": ""
+        }
+    }
+}

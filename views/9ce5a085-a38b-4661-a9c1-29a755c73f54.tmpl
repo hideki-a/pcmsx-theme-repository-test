@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>会員向けサイト</title>
+</head>
+<body>
+  <h1>会員向けサイト</h1>
+  <mt:dynamicmtml>
+  <mt:include module="ログイン・ログアウト" />
+  <div><mt:date format_ts="H:i:s" /></div>
+  </mt:dynamicmtml>
+  <h2>下層ページ</h2>
+  <mt:pages>
+  <mt:if name="__first__"><ul></mt:if>
+    <li><a href="<mt:pagepermalink relative escape />"><mt:pagetitle escape /></a></li>
+  <mt:if name="__last__"></ul></mt:if>
+  </mt:pages>
+
+  <div><button type="button" id="bookmark">Bookmark</button></div>
+  <script>
+    (() => {
+      // POST メソッドの実装の例
+      async function postData(url = '', data = {}) {
+        const response = await fetch(url, {
+          method: 'POST',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+        return response;
+      }
+
+      const button = document.getElementById('bookmark');
+      button.addEventListener('click', async () => {
+        const response = await postData('/pnx_bookmark.php', { 'object_id': 1 });
+        const json = await response.json();
+        console.log(json);
+      })
+    })();
+  </script>
+</body>
+</html>

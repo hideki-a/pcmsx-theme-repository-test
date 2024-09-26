@@ -1,0 +1,16 @@
+<mt:iflogin>
+  <mt:membercontext><p><strong><mt:if tag="membersso" eq="SAML">SAML認証で<mt:else>PowerCMSのログイン画面で</mt:if>ログインしました。</strong><mt:membernickname escape />さん、ようこそ。</p></mt:membercontext>
+  <ul>
+    <li><a href="/app/pt-members.php?__mode=logout&amp;return_url=<mt:var name="current_archive_url" relative escape />">ログアウト</a></li>
+    <li><a href="/app/pt-member-saml.php?__mode=logout_request&workspace_id=2&amp;return_url=<mt:var name="current_archive_url" relative escape />">ログアウト（シングルサインアウト）</a></li>
+    <li><a href="/app/pt-members.php?__mode=unsubscribe&_type=confirm&workspace_id=2&amp;return_url=<mt:var name="current_archive_url" relative escape />">退会</a></li>
+  </ul>
+<mt:else>
+  <p><strong>ログインしてください。</strong></p>
+  <ul>
+    <li><a href="/app/pt-member-saml.php?__mode=auth_request&amp;&workspace_id=2&amp;return_url=<mt:var name="current_archive_url" relative escape />">ログイン（シングルサインオン）</a></li>
+    <li><a href="/app/pt-member-saml.php?__mode=auth_request">ログイン（エラーになれば正常）</a></li>
+    <li><a href="/app/pt-members.php?__mode=login&workspace_id=2&amp;return_url=<mt:var name="current_archive_url" relative escape />">ログイン（PowerCMSのログイン画面）</a></li>
+  </ul>
+</mt:else>
+</mt:iflogin>
