@@ -1,0 +1,29 @@
+{
+    "label": "ViewTest",
+    "id": "viewtest",
+    "version": "",
+    "author": "",
+    "author_link": "",
+    "description": "",
+    "objects": [],
+    "component": "",
+    "repository": "https://github.com/hideki-a/pcmsx-theme-repository-test",
+    "views": {
+        "4e83bb86-6cc5-4e95-ba69-ce8448b763a4": {
+            "name": "コンパイル検証",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "template",
+            "linked_file": ""
+        },
+        "f689f62e-73d8-48e9-babe-c5a721559f43": {
+            "name": "共通変数",
+            "subject": "",
+            "status": "2",
+            "class": "Archive",
+            "basename": "template_1",
+            "linked_file": ""
+        }
+    }
+}
